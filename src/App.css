@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+body,ul,li{
+  margin:0;padding:0;
+}
+h4,h5,p{
+  margin:0;
+}
+.body {
+  font-family: sans-serif;
+  color: #003;
+  font-size: 1em;
+  line-height: 144%;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+.primary-clr{
+  color: #6578e5;
+}
+.pri-text{
+  font-weight: 500;
+  font-size: 1.3em;
+  margin:0;
+  padding-bottom: 0.3em;
+}
+.sec-text{
+
+}
+.br-rounded{
+  border-radius: 0.5em;
+}
+.para{
+  margin: 0;
+  color: #000000d4;
+  font-weight: 200;
+}
+.container-fuild{
+  padding:0 15px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.brand img{
+  width: 150px;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    height: 51px;
+}
+.count-title{
+  padding: 1em 0;
+  display: inline-block;
+  font-weight: 200px;
+}
+.property-list-wrapper{
+  width: 30%;
+  padding: 0 15px;
+  float:left;
+  box-sizing: border-box;
+}
+.property-list-wrapper .property-card{
+  margin-bottom: 1.2em;
+    padding: 1.2em;
+    border-bottom: 1px solid #e8e8ff;
+    background-color: #fff;
+    cursor: pointer;
+    
+    
+}
+.property-list-wrapper .property-card:last-child{
+  border-bottom: 0;
+}
+.property-list-wrapper .property-card.selected,.property-list-wrapper .property-card:hover{
+ 
+  background-color: #f2f2ff;
+  border-radius: 0.5em;
+  border-bottom: 1px solid #fff;
+  transition: 0.2s background-color ease-in;
+}
+.property-list-wrapper .property-card.selected{
+  background-color: #e8e8ff;
+}
+.card-title{
+  position: relative;
+}
+.card-title h4{
+  font-weight: 500;
+  font-size: 1.3em;
+  margin: 0;
+  width: 75%;
+  line-height: 1.5em;
+  display: inline-block;
+}
+.card-title span{
+  position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    height: 1.6em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #39388b;
+    border-radius: 0.25em;
+    color: #003;
+    font-size: 1em;
+    font-weight: 400;
+}
+.card-content{
+  overflow: hidden;
+  padding: 0.5em 0 0.8em 0;
+}
+.card-content p{
+  margin: 0;
+  width: 50%;
+  float: left;
+  padding: 0.5em;
+  padding-left: 2em;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  color: #0000008c;
+  font-weight: 200;
+}
+.card-content span{
+  position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0px;
+    top: 0;
+  background-size: contain;
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: 0px -1px;
+}
+span.floor-icon{
+  background-image: url('assets/icons/floor-icon.svg');
+  
+}
+span.view-icon{
+  background-image: url('assets/icons/view-icon.svg');
+}
+.card-footer{
+  overflow: hidden;
+}
+.card-footer span{
+  float: right;
+  padding-right: 1em;
+  padding-top: 5px;
+}
+.card-footer h5{
+  font-size: 1.4em;
+  font-weight: 400;
+  float: right;
+  margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* detail card css*/
+.property-detail-wrapper{
+  width:70%;
+  float:left;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-top: 3.2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-img{
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  overflow: hidden;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.card-img img{
+  width: 100%;
+  float: left;
 }
+.card-details{
+  border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: #f2f2ff;
+    padding: 1.5em 1.4em;
+}
+.card-details .card-detail-text{
+  width: 70%;
+    display: inline-block;
+}
+.card-detail-text h4{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.card-details button{
+  float: right;
+    border: 0;
+    color: #6578e5;
+    border: 2px solid #6578e5;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 0.8em;
+    background: transparent;
 }
